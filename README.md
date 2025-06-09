@@ -71,7 +71,6 @@ Here are just a few of the things that pandas does well:
     generation and frequency conversion, moving window statistics,
     date shifting and lagging
 
-
    [missing-data]: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
    [insertion-deletion]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html#column-selection-addition-deletion
    [alignment]: https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html?highlight=alignment#intro-to-data-structures
