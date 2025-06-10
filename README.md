@@ -131,7 +131,7 @@ In the `pandas` directory (same one where you found this file after
 cloning the git repo), execute:
 
 ```sh
-pip install .
+pip install ..
 ```
 
 or for installing in [development mode](https://pip.pypa.io/en/latest/cli/pip_install/#install-editable):
