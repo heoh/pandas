@@ -1060,7 +1060,7 @@ def convert_dtypes(
             elif (
                 infer_objects
                 and input_array.dtype == object
-                and (isinstance(inferred_dtype, str) and inferred_dtype == "integer")
+                and inferred_dtype == "integer"
             ):
                 inferred_dtype = target_int_dtype
 
@@ -1086,17 +1086,14 @@ def convert_dtypes(
             elif (
                 infer_objects
                 and input_array.dtype == object
-                and (
-                    isinstance(inferred_dtype, str)
-                    and inferred_dtype == "mixed-integer-float"
-                )
+                and inferred_dtype == "mixed-integer-float"
             ):
                 inferred_dtype = pandas_dtype_func("Float64")
 
         if convert_boolean:
             if input_array.dtype.kind == "b":
                 inferred_dtype = pandas_dtype_func("boolean")
-            elif isinstance(inferred_dtype, str) and inferred_dtype == "boolean":
+            elif inferred_dtype == "boolean":
                 inferred_dtype = pandas_dtype_func("boolean")
 
         if isinstance(inferred_dtype, str):
